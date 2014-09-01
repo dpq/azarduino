@@ -1,0 +1,21 @@
+#ifndef WIRE
+#include <Wire.h>
+#define WIRE
+#endif
+
+/*INCLUDE*/
+
+void setup() {
+  Serial.begin(9600);
+  Wire.begin();
+  /*SETUP*/
+  interrupts();
+  Serial.println("INIT");
+  delay(1000);
+}
+
+void loop() {
+  /*LOOP*/
+  Serial.println();
+  delay(1000);
+}

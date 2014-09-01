@@ -1,0 +1,19 @@
+#ifndef WIRE
+#include <Wire.h>
+#define WIRE
+#endif
+
+#ifndef SI1145
+#include <Adafruit_SI1145.h>
+Adafruit_SI1145 uv = Adafruit_SI1145();
+#define SI1145
+#endif
+
+void setup_si1145() {
+  uv.begin();
+}
+
+void loop_si1145() {
+  Serial.print(";UV index SI1145:");
+  Serial.print(uv.readUV()/100);
+}

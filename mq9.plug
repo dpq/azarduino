@@ -1,0 +1,10 @@
+const int pin_MQ9 = 1;
+
+void setup_mq9() {
+
+}
+
+void loop_mq9() {
+  Serial.print(";Combustible gas [ppm] MQ9:");
+  Serial.print(ads.readADC_SingleEnded(pin_MQ9));
+}

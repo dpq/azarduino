@@ -1,0 +1,22 @@
+#ifndef WIRE
+#include <Wire.h>
+#define WIRE
+#endif
+
+#ifndef BMP085
+#include <Adafruit_BMP085.h>
+Adafruit_BMP085 bmp085;
+#define BMP085
+#endif
+
+void setup_bmp085() {
+  bmp085.begin();
+}
+
+void loop_bmp085() {
+  Serial.print(";Temperature [C*] BMP085:");
+  Serial.print(bmp085.readTemperature());
+
+  Serial.print(";Pressure [Pa] BMP085:");
+  Serial.print(bmp085.readPressure());
+}

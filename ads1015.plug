@@ -1,0 +1,17 @@
+#ifndef WIRE
+#include <Wire.h>
+#define WIRE
+#endif
+
+#ifndef ADS1115
+#include <Adafruit_ADS1015.h>
+Adafruit_ADS1115 ads;
+#define ADS1115
+#endif
+
+void setup_ads1015() {
+  ads.begin();
+}
+
+void loop_ads1015() {
+}

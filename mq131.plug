@@ -1,0 +1,10 @@
+const int pin_MQ131 = 0;
+
+void setup_mq131() {
+
+}
+
+void loop_mq131() {
+  Serial.print(";O3 & Cl2 [ppm] MQ131:");
+  Serial.print(ads.readADC_SingleEnded(pin_MQ131));
+}

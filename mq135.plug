@@ -1,0 +1,10 @@
+const int pin_MQ135 = 2;
+
+void setup_mq135() {
+
+}
+
+void loop_mq135() {
+  Serial.print(";Noxious gas [ppm] MQ135:");
+  Serial.print(ads.readADC_SingleEnded(pin_MQ135));
+}

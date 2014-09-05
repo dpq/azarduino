@@ -16,6 +16,6 @@ void setup() {
 
 void loop() {
   /*LOOP*/
-  Serial.println();
+  Serial.print("\n");
   delay(1000);
 }

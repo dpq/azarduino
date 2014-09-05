@@ -8,8 +8,8 @@ mods = []
 contents = []
 
 for f in files:
-    if f[-2:]==".c":
-        mods.append(f[:-2])
+    if f[-5:]==".plug":
+        mods.append(f[:-5])
         contents.append(open(os.path.join(dir,f)).read())
 
 template=open(os.path.join(dir,"template.xino")).read()

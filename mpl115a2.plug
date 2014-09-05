@@ -1,0 +1,22 @@
+#ifndef WIRE
+#include <Wire.h>
+#define WIRE
+#endif
+
+#ifndef MPL115A2
+#include <Adafruit_MPL115A2.h>
+Adafruit_MPL115A2 mpl115a2;
+#define MPL115A2
+#endif
+
+void setup_mpl115a2() {
+  mpl115a2.begin();
+}
+
+void loop_mpl115a2() {
+  Serial.print(";Temperature [C*] MPL115A2:");
+  Serial.print(mpl115a2.getTemperature());
+
+  Serial.print(";Pressure [kPa] MPL115A2:");
+  Serial.print(mpl115a2.getPressure());
+}

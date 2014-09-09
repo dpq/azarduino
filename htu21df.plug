@@ -1,0 +1,19 @@
+#ifndef WIRE
+#include <Wire.h>
+#define WIRE
+#endif
+
+#ifndef HTU21DF
+#include <Adafruit_HTU21DF.h>
+Adafruit_HTU21DF htu = Adafruit_HTU21DF();
+#define HTU21DF
+#endif
+
+void setup_htu21df() {
+  bmp085.begin();
+}
+
+void loop_htu21df() {
+  Serial.print(";Humidity [%] HTU21DF:");
+  Serial.print(htu.readHumidity());
+}

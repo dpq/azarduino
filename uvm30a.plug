@@ -1,11 +1,11 @@
 const int pin_UVM30A = 2;
 const float mvPerTick = 4.9;
 
-void setup_uvm30() {
+void setup_uvm30a() {
 
 }
 
-void loop_uvm30() {
+void loop_uvm30a() {
   Serial.print(";UV index UVM30A:");
   float voltage = analogRead(pin_UVM30A)*5000.0/1024;
   float uv = 0.0;

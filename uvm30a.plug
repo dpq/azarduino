@@ -1,4 +1,4 @@
-const int pin_UVM30A = 1;
+const int pin_UVM30A = 2;
 const float mvPerTick = 4.9;
 
 void setup_uvm30() {

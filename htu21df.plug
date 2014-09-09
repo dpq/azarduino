@@ -10,7 +10,7 @@ Adafruit_HTU21DF htu = Adafruit_HTU21DF();
 #endif
 
 void setup_htu21df() {
-  bmp085.begin();
+  htu.begin();
 }
 
 void loop_htu21df() {

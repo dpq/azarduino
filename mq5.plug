@@ -1,0 +1,10 @@
+const int pin_MQ5 = 4;
+
+void setup_mq5() {
+
+}
+
+void loop_mq5() {
+  Serial.print(";Coal gas [ppm] MQ5:");
+  Serial.print(ads.readADC_SingleEnded(pin_MQ5));
+}

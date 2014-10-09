@@ -1,0 +1,10 @@
+const int pin_MQ136 = 2;
+
+void setup_mq136() {
+
+}
+
+void loop_mq136() {
+  Serial.print(";H2S [ppm] MQ136:");
+  Serial.print(ads.readADC_SingleEnded(pin_MQ136));
+}

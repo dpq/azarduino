@@ -21,5 +21,10 @@ git clone https://github.com/adafruit/Adafruit_SI1145_Library.git $DESTDIR/SI114
 # Full-featured GPS/NMEA Parser for Arduino
 git clone https://github.com/mikalhart/TinyGPSPlus.git $DESTDIR/TinyGPSPlus
 
+# AdaFruit motor/servo shield
+git clone https://github.com/adafruit/Adafruit_Motor_Shield_V2_Library.git $DESTDIR/Motor_Shield
+
+
 # I2C Raspberry Pi library
 git clone git://git.drogon.net/wiringPi wiringPi && cd wiringPi && ./build && cd ..
+
